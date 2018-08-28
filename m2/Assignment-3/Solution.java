@@ -7,10 +7,10 @@ final class Solution {
 	/**@param args this is a string **/
 	public static void main(String[] args) {
 		/** this is used for scanning purpose*/
-		Scanner s=new Scanner(System.in);      
+		Scanner s = new Scanner(System.in);      
         int base = s.nextInt();
         int exponent = s.nextInt();
-        int result=power(base,exponent);
+        int result = power(base,exponent);
         System.out.println(result);
 	}
 	/**
@@ -22,7 +22,7 @@ final class Solution {
 	public static int power(final int base, final int exponent) {
 		if (exponent > 0)
 		{
-			return base *power (base,exponent-1);
+			return base * power (base,exponent-1);
 		}
 		return 1 ;
 	}
