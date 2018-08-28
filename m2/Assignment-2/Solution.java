@@ -20,8 +20,7 @@ final class Solution {
      @param b variable
       @param c variable
     Need to write the rootsOfQuadraticEquation function and print the output.**/
-    static void rootsOfQuadraticEquation(final int a, final int b, final int c)
-    {
+    static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
         double root1;
         double root2;
         root1 = ( - b + (Math.sqrt((b * b) - 4 *a * c))) / (2 * a);
