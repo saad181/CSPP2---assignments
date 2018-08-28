@@ -7,9 +7,9 @@ final class Solution {
     public static void main(final String[] args) {
         /** this is used for scanning purpose*/
         Scanner s = new Scanner(System.in);
-        int base = s.nextInt();
-        int exponent = s.nextInt();
-        int result = power(base, exponent);
+        long base = s.nextLong();
+        long exponent = s.nextLong();
+        long result = power(base, exponent);
         System.out.println(result);
     }
     /**
@@ -17,7 +17,7 @@ final class Solution {
      @param exponent variable
       Need to write the power function and print the output.
     **/
-    public static int power(final int base, final int exponent) {
+    public static long power(final long base, final long exponent) {
         if (exponent > 0)
         {
             return (base * power(base, exponent - 1));
