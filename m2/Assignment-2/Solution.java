@@ -1,6 +1,7 @@
 import java.util.Scanner;
 /**this is a program.**/
 final class Solution {
+    /**this is a program.**/
     private Solution(){ }
     /**
      *@param args this is a string
