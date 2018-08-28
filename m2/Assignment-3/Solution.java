@@ -14,9 +14,9 @@ final class Solution {
         System.out.println(result);
 	}
 	/**
-	@param a variable
-     @param b variable
-      @param c variable
+	@param base variable
+     @param exponent variable
+      
 	Need to write the power function and print the output.
 	**/
 	public static int power(final int base, final int exponent) {
