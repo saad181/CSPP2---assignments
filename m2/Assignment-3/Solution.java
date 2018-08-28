@@ -22,8 +22,8 @@ final class Solution {
 	public static int power(final int base, final int exponent) {
 		if (exponent > 0)
 		{
-			return base * power (base,exponent-1);
+			return base * power(base, exponent - 1);
 		}
-		return 1 ;
+		return 1;
 	}
 }
