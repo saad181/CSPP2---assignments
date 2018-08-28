@@ -1,11 +1,12 @@
 import java.util.Scanner;
 /**this is a program.**/
-public class Solution {
+final class Solution {
+    private Solution(){ }
     /**
      *@param args this is a string
     this is a main method
     **/
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**this is used for the scanning purpose**/
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
@@ -18,7 +19,7 @@ public class Solution {
      @param b variable
       @param c variable
     Need to write the rootsOfQuadraticEquation function and print the output.**/
-    static void rootsOfQuadraticEquation(int a, int b, int c)
+    static void rootsOfQuadraticEquation(final int a,final int b,final int c)
     {
         double root1;
         double root2;
