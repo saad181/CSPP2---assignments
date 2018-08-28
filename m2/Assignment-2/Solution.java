@@ -24,8 +24,9 @@ final class Solution {
         double root1;
         double root2;
         final int four = 4;
-        root1 = (-b + (Math.sqrt((b * b) - four *a * c))) / (2 * a);
+        root1 = (-b + (Math.sqrt((b * b) - four * a * c))) / (2 * a);
         root2 = (-b - (Math.sqrt((b * b) - four * a * c))) / (2 * a);
         System.out.println(root1 + " " + root2);
     }
 }
+
