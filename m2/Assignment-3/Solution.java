@@ -5,7 +5,7 @@ final class Solution {
 	private Solution() { }
 
 	/**@param args this is a string **/
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		/** this is used for scanning purpose*/
 		Scanner s = new Scanner(System.in);      
         int base = s.nextInt();
