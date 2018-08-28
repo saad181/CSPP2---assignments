@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 /**this is a program.**/
 public class Solution {
     /**
