@@ -23,8 +23,9 @@ final class Solution {
     static void rootsOfQEquation(final int a, final int b, final int c) {
         double root1;
         double root2;
-        root1 = (-b + (Math.sqrt((b * b) - 4 *a * c))) / (2 * a);
-        root2 = (-b - (Math.sqrt((b * b) - 4 * a * c))) / (2 * a);
+        final int four = 4;
+        root1 = (-b + (Math.sqrt((b * b) - four *a * c))) / (2 * a);
+        root2 = (-b - (Math.sqrt((b * b) - four * a * c))) / (2 * a);
         System.out.println(root1 + " " + root2);
     }
 }
