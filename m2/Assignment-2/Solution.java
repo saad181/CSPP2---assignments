@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**this is a program.**/
 final class Solution {
     /**this is a program.**/
-    private Solution(){ }
+    private Solution() { }
     /**
      *@param args this is a string
     this is a main method
