@@ -12,15 +12,13 @@ private Solution() { }
         final int seven = 7;
         for (int i = 1; i <= n; i++) {
             x = i;
-            while (x != 0)
-            {
+            while (x != 0) {
                 if (x % ten == seven) {
                     temp = temp + 1;
                 }
                 x = x / ten;
             }
         }
-       
         System.out.println(temp);
     }
 }
