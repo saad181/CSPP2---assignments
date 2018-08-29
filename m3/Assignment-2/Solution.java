@@ -1,7 +1,8 @@
 import java.util.Scanner;
 /** this is the program.**/
-final class Solution { 
+final class Solution {
 /** this is the main class.**/
+private Solution() { }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
