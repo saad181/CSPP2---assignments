@@ -24,3 +24,4 @@ private Solution() { }
         System.out.println(temp);
     }
 }
+
