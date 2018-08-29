@@ -1,5 +1,5 @@
 import java.util.Scanner;
-/*this is a program.*/
+/**this is a program.**/
 final class Solution {
 /** this is a main class.**/
     private Solution() { }
