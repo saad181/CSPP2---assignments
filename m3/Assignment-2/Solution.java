@@ -3,6 +3,7 @@ import java.util.Scanner;
 final class Solution {
 /** this is the main class.**/
 private Solution() { }
+/** @param args this is a string**/
     public static void main(final String[] args) {
         //** main function**/
         Scanner s = new Scanner(System.in);
