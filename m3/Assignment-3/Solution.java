@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 /*this is a program.*/
 final class Solution {
@@ -6,7 +5,7 @@ final class Solution {
     private Solution() { }
     /*@param this is a string*/
     public static void main(final String[] args) {
-       /* this is used for scanning purpose.*/
+       /** this is used for scanning purpose.**/
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
         int n2 = s.nextInt();
