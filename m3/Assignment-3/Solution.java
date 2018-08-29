@@ -13,14 +13,18 @@ public class Solution {
         //gcd(n1,n2);
         System.out.println(gcd(n1,n2));
     }
-    /*
-	Need to write the gcd function and print the output.
-	*/
+    /**
+     * { function_description }
+     *
+     * @param      n1    The n 1
+     * @param      n2    The n 2
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static int gcd(int n1, int n2) 
     {
-        for(int i=n1; i>1;i--) {
-            if(n1 % i ==0)
-            {
+        for(int i = n1; i > 1;i --) {
+            if(n1 % i == 0){
                 if(n2 % i == 0)
                 {
                     return i;
