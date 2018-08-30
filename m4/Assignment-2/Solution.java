@@ -33,8 +33,8 @@ public class Solution {
 						System.out.println(" ");
 					}
 
-				}System.out.println();
-			}
+				}
+			}System.out.println();
 		}else {
 			System.out.println("not possible");
 		}
