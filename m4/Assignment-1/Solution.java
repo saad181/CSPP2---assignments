@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * program for largest number
+ * program for largest number.
  */
 final class Solution {
     /** this the main class.**/
@@ -10,7 +10,7 @@ final class Solution {
         /** this the main function.**/
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int arr[] = new int[n];
+        int[] arr = new int[n];
         for (int j = 0; j < n; j++) {
             arr[j] = sc.nextInt();
         }
