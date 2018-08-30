@@ -31,10 +31,10 @@ public class Solution {
 					System.out.println(arr3[a][b]);
 					if (b <size2 -1) {
 						System.out.println(" ");
-					}
+					}System.out.println();
 
 				}
-			}System.out.println();
+			}
 		}else {
 			System.out.println("not possible");
 		}
