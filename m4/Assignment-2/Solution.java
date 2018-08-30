@@ -16,7 +16,7 @@ public class Solution {
 		int size4 = scan.nextInt();
 		int[][] arr2 = new int[size3][size4];
 		for (int m = 0; m < arr2.length; m++) {
-			for (int n = 0; n < arr2.length; n++) {
+			for (int n = 0; n < arr2[m].length; n++) {
 				arr2[m][n] = scan.nextInt();
 
 			}
