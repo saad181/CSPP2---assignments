@@ -20,7 +20,7 @@ final class Solution {
      * @param      s     {is a variable.}
      *
      * @return     { k }
-     */
+     **/
     static String binaryToDecimal(final String s) {
         /** this is the function for binary to decimal.**/
         int j;
