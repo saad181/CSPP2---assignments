@@ -1,7 +1,11 @@
 import java.util.Scanner;
-public class Solution
-{
+/** this is binary to decimal program.**/
+public class Solution {
+     /** this is a program.**/
+     private Solution() { }
+     /**@param args this is string.**/
 	public static void main(final String[] args) {
+		/** this is string.**/
 	    Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
 		for (int i = 0; i < n; i++) {
@@ -11,6 +15,7 @@ public class Solution
 		}
 	}
 	static String binaryToDecimal(final String s) {
+		/** this is the function for binary to decimal.**/
 		int j;
 		int k = 0;
 		for (j = 0; j < s.length(); j++) {
