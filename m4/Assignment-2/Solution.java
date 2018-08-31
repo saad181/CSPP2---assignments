@@ -7,7 +7,7 @@ final class Solution {
 	/**
 	 * { function_description }
 	 *
-	 * @param      args  this is the string
+	 * @param      args  this is the string.
 	 */
 	public static void main(final String[] args) {
 		/** this is the main function**/
