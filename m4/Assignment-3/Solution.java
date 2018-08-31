@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /** this is binary to decimal program.**/
-public class Solution {
+final class Solution {
      /** this is a program.**/
      private Solution() { }
      /**@param args this is string.**/
@@ -14,6 +14,7 @@ public class Solution {
 			System.out.println(res);
 		}
 	}
+	/**@param s is s variable**/
 	static String binaryToDecimal(final String s) {
 		/** this is the function for binary to decimal.**/
 		int j;
