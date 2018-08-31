@@ -15,9 +15,9 @@ final class Solution {
         }
     }
     /**
-     * { function_description.}
+     * { function_description. }
      *
-     * @param      s     {is a variable.}
+     * @param      s     {is a variable. }
      *
      * @return     { k }
      **/
