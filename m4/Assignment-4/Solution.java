@@ -11,7 +11,7 @@ final class Solution {
         String reverse = reverseString(s);
         System.out.println(reverse);
     }
-    /**{ function_description }
+    /**{ function_description. }
     @param      reverse1  varaible
     @return     { return value of s }
     **/
