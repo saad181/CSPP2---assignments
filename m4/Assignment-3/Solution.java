@@ -14,7 +14,13 @@ final class Solution {
 			System.out.println(res);
 		}
 	}
-	/**@param s is s variable**/
+	/**
+	 * { function_description }
+	 *
+	 * @param      s     {is a variable }
+	 *
+	 * @return     { k }
+	 */
 	static String binaryToDecimal(final String s) {
 		/** this is the function for binary to decimal.**/
 		int j;
