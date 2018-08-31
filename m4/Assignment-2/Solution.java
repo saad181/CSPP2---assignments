@@ -1,9 +1,9 @@
 import java.util.Scanner;
-/** this the program for adding two matrices**/
+/** this the program for adding two matrices.**/
 final class Solution {
-	/** this is a program**/
+	/** this is a program.**/
 	private Solution() { }
-	/* Fill the main function to print resultant of addition of matrices*/
+	/* Fill the main function to print resultant of addition of matrices.*/
 	/**
 	 * { function_description }
 	 *
