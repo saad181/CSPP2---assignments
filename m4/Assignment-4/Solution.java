@@ -14,7 +14,7 @@ final class Solution {
     
     static String reverseString(String reverse1) {//hellowrld
         String s = "";
-        for (int i = reverse1.length()-1; i >= 0 ; i--) {
+        for (int i = reverse1.length() - 1; i >= 0; i --) {
             //System.out.println(reverse.charAt(i));
             s = s + reverse1.charAt(i);
         }
