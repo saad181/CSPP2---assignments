@@ -1,12 +1,13 @@
 import java.util.Scanner;
 final class Solution {
+	private Solution() { }
 	/* Fill the main function to print resultant of addition of matrices*/
 	/**
 	 * { function_description }
 	 *
 	 * @param      args  this is the string
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		/** this is the main function**/
 		Scanner scan = new Scanner(System.in);
 		int size1 = scan.nextInt();
@@ -35,14 +36,14 @@ final class Solution {
 				for (int b = 0; b < size2; b++) {
 					arr3[a][b] = arr1[a][b] + arr2[a][b];
 					System.out.print(arr3[a][b]);
-					if (b <size2 -1) {
+					if (b < size2 - 1) {
 						System.out.print(" ");
 					}
 
 				}
 				System.out.println();
 			}
-		}else {
+		} else {
 			System.out.println("not possible");
 		}
 	}
