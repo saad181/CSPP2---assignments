@@ -34,9 +34,9 @@ final class Solution {
 			for (int a = 0; a < size1; a++) {
 				for (int b = 0; b < size2; b++) {
 					arr3[a][b] = arr1[a][b] + arr2[a][b];
-					System.out.println(arr3[a][b]);
+					System.out.print(arr3[a][b]);
 					if (b <size2 -1) {
-						System.out.println(" ");
+						System.out.print(" ");
 					}
 
 				}
