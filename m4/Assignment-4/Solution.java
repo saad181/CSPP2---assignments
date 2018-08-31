@@ -11,6 +11,7 @@ final class Solution {
         String reverse = reverseString(s);
         System.out.println(reverse);
     }
+    /**@param reverse1 varaible**/
     static String reverseString(final String reverse1) {
         /** this the function for reverse of string.**/
         String s = "";
