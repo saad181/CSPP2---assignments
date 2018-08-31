@@ -1,7 +1,13 @@
 import java.util.Scanner;
-public class Solution {
+final class Solution {
 	/* Fill the main function to print resultant of addition of matrices*/
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  this is the string
+	 */
 	public static void main(String[] args) {
+		/** this is the main function**/
 		Scanner scan = new Scanner(System.in);
 		int size1 = scan.nextInt();
 		int size2 = scan.nextInt();
@@ -23,8 +29,8 @@ public class Solution {
 
 		}
 		int[][] arr3 = new int[size1][size2];
-		final int l1 = 3;
-		if (size1 == l1 && size2 == l1) {
+		final int l = 3;
+		if (size1 == l && size2 == l) {
 			for (int a = 0; a < size1; a++) {
 				for (int b = 0; b < size2; b++) {
 					arr3[a][b] = arr1[a][b] + arr2[a][b];
