@@ -12,8 +12,8 @@ final class Solution {
         System.out.println(reverse);
     }
     /**@param reverse1 varaible**/
-    /** this the function for reverse of string.**/
     static String reverseString(final String reverse1) {
+        /** this the function for reverse of string.**/
         String s = "";
         for (int i = reverse1.length() - 1; i >= 0; i--) {
             //System.out.println(reverse.charAt(i));
