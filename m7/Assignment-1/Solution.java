@@ -1,5 +1,5 @@
 import java.util.Scanner;
-/** this is the length of the string**/
+/** this is the length of the string.**/
 class InputValidator
 {
 	String data;
@@ -20,9 +20,8 @@ class InputValidator
 		}
 public class Solution
 {
-	public static void main(final String [] args)
-	/** this is the main method**/
-    {
+	public static void main(final String [] args) {
+	/** this is the main method.**/
     	Scanner s = new Scanner(System.in);
     	String input = s.next();
     	InputValidator i = new InputValidator(input);
