@@ -13,7 +13,13 @@ class InputValidator {
          data = da;
         length = da.length();
     }
+    /**
+     * { function_description }
+     *
+     * @return     { it returns the true or false. }
+     */
     public boolean validateData() {
+
         int six = 6;
         if (length >= six) {
             return true;
@@ -21,11 +27,18 @@ class InputValidator {
         else {
             return false;
         }
-        }
-        }
+    }
+}
 public class Solution
 {
+
+    /**
+     * { args is for arguments. }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
+
     /** this is the main method.**/
         Scanner s = new Scanner(System.in);
         String input = s.next();
