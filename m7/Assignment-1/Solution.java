@@ -1,6 +1,9 @@
 import java.util.Scanner;
-/** this is the length of the string.**/
+/**
+this is the length of the string.
+*/
 class InputValidator {
+    
     String data;
     private int length;
 
