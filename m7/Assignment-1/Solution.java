@@ -3,10 +3,8 @@ import java.util.Scanner;
 this is the length of the string.
 */
 class InputValidator {
-    
     String data;
     private int length;
-
     /**
      * Constructs the object.
      *
@@ -32,16 +30,13 @@ class InputValidator {
         }
     }
 }
-public class Solution
-{
-
+public class Solution {
     /**
      * { args is for arguments. }
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-
     /** this is the main method.**/
         Scanner s = new Scanner(System.in);
         String input = s.next();
