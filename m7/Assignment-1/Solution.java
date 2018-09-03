@@ -12,11 +12,11 @@ class InputValidator
 		if (length >= 6) {
 			return true;
 		}
-		else {
+		else 
 			return false;
 		}	
 		}
-	}
+	
 
 public class Solution
 {
