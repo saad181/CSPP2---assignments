@@ -3,7 +3,13 @@ import java.util.Scanner;
 this is the length of the string.
 **/
 class InputValidator {
+    /**
+     * decaring string.
+     **/
     private String data;
+    /**
+     * declaring integer.
+     **/
     private int length;
     /**
      * Constructs the object.
@@ -20,7 +26,9 @@ class InputValidator {
      * @return     { it returns the true or false. }
      **/
     public boolean validateData() {
-
+        /**
+         * declaring magic number.
+         **/
         final int six = 6;
         if (length >= six) {
             return true;
@@ -31,7 +39,7 @@ class InputValidator {
 /**
  * Class for solution.
  **/
-public class Solution {
+final class Solution {
     private Solution() { }
     /**
      * { args is for arguments. }
