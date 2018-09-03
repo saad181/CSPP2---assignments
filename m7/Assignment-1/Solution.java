@@ -1,9 +1,10 @@
-import java.util.*;
+import java.util.Scanner;
+/** this is the length of the string**/
 class InputValidator
 {
 	String data;
 	int length;
-	InputValidator(String da) {
+	InputValidator(final String da) {
 		 data = da;
         length = da.length();
 	}
@@ -19,7 +20,7 @@ class InputValidator
 		}
 public class Solution
 {
-	public static void main(String [] args)
+	public static void main(final String [] args)
 	/** this is the main method**/
     {
     	Scanner s = new Scanner(System.in);
