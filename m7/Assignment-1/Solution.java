@@ -3,7 +3,7 @@ import java.util.Scanner;
 this is the length of the string.
 */
 class InputValidator {
-    String data;
+    private String data;
     private int length;
     /**
      * Constructs the object.
