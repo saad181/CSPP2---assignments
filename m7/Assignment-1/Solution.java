@@ -40,6 +40,9 @@ class InputValidator {
  * Class for solution.
  **/
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() { }
     /**
      * { args is for arguments. }
