@@ -77,7 +77,6 @@ public class List {
         list = new int[ten];
         size = 0;
     }
-    
     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
@@ -92,25 +91,23 @@ public class List {
     public void add(final int item) {
         list[size++] = item;
     }
-       
-       
-        //Inserts the specified element at the end of the list.
-    
-
-    /*
-     * The size method returns the value of the size.
-     * The purpose of the method is to announce the size of the list
-     * to the objects outside the list
-     * 
-     * The method returns an int. Empty list should return 0.
-     */
+    //
+    // Inserts the specified element at the end of the list. /*
+    //      * The size method returns the value of the size.
+    //      * The purpose of the method is to announce the size of the list
+    //      * to the objects outside the list
+    //      * { list_item_description.}
+    //      * The method returns an int. Empty list should return 0. */
+    //
+    // @return     { description_of_the_return_value }
+    //
     public int size() {
         // replace the code below to implement the size method
         //int size = 0;
         return size;
         //return -1;
     }
-
+    
     /*
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
@@ -140,22 +137,23 @@ public class List {
             }
             list[size] = 0;
             size--;
-         }
+        }
          else {
             System.out.println("Invalid Position Exception");
-         }
+        }
     }
-
     /*
-     * Get method has to return the items that is
-     * at the index position passed as an argument to the method.
-     * If the item doesn't exist then return a -1 to indicate that
-     * there is no element at that index.
-     * How can an element not be there at a given position?
-     * Well, if the position is greater than the number of items
-     * in the list then that would mean the item doesn't exist.
-     * How do we check if the position is greater than the 
-     * number of items in the list? Would size variable be useful?
+     * Get method has to return the items that is at the index position passed
+     * as an argument to the method. If the item doesn't exist then return a -1
+     * to indicate that there is no element at that index. How can an element
+     * not be there at a given position? Well, if the position is greater than
+     * the number of items in the list then that would mean the item doesn't
+     * exist. How do we check if the position is greater than the number of
+     * items in the list? Would size variable be useful?
+     *
+     * @param      index  .index.
+     *
+     * @return     { return negative value.}
      */
     public int get(final int index) {
         // Replace the code below to write the code for get
