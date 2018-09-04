@@ -85,7 +85,6 @@ public class List {
      * Is it the same as the end of the array?
      * Think about how you can use the size variable to add item
      * to the list.
-     * 
      * The method returns void (nothing)
      */
     public void add(final int item) {
@@ -111,7 +110,7 @@ public class List {
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
      * It also does an additional step.
-     * Think about what happens when 
+     * Think about what happens when
      * an item is removed from the middle of the list
      * It creates a hole in the list, right?
      * This would mean, all the items that are
@@ -191,7 +190,7 @@ public class List {
         return res;
     } 
     /*
-     * Contains return true if the list has the item passed as an argument to
+    / * Contains return true if the list has the item passed as an argument to
      * the method So, iterate through the list and return true if the item
      * exists and otherwise false
      *
