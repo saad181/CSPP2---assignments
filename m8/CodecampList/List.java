@@ -32,7 +32,13 @@ public class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
+    /**
+    declarng a int array
+    **/
     private int[] list;
+    /**
+     * var_description.
+     */
     private int size;
     /*
      * What are the other class variables needed for creating a list?
@@ -58,9 +64,9 @@ public class List {
     // again, don't initialize it here
     // variable initialization should be done in the constructor
 
-    /*
-     * The purpose of the constructor is to initialize the
-     * class variables with some default values.
+    /**
+     * The purpose of the constructor is to initialize the class variables with.
+     * some default values.
      */
     public List() {
         // what are the two variables to be initialized here?
@@ -78,26 +84,23 @@ public class List {
         size = 0;
     }
     /**
-     * The add method does what the name suggests.
-     * Add an int item to the list.
-     * The assumption is to store the item at the end of the list
-     * What is the end of the list?
-     * Is it the same as the end of the array?
-     * Think about how you can use the size variable to add item
-     * to the list.
-     * The method returns void (nothing)
+     * The add method does what the name suggests. Add an int item to the list.
+     * The assumption is to store the item at the end of the list What is the
+     * end of the list? Is it the same as the end of the array? Think about how
+     * you can use the size variable to add item to the list. The method returns
+     * void (nothing)
+     *
+     * @param      item  The item
      **/
     public void add(final int item) {
         list[size++] = item;
     }
-    //
-    // Inserts the specified element at the end of the list. /*
-    //      * The size method returns the value of the size.
-    //      * The purpose of the method is to announce the size of the list
-    //      * to the objects outside the list
-    //      * { list_item_description.}
-    //      * The method returns an int. Empty list should return 0. */
-    //
+    /** Inserts the specified element at the end of the list. /*
+    * The size method returns the value of the size.
+    * The purpose of the method is to announce the size of the list
+    * to the objects outside the list
+    * { list_item_description.}
+    /* The method returns an int. Empty list should return 0. */
     // @return     { description_of_the_return_value }
     //
     public int size() {
