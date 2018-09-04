@@ -194,12 +194,16 @@ public class List {
         return res;
     } 
     /*
-     * Contains return true if the list has
-     * the item passed as an argument to the method
-     * So, iterate through the list and return true if
-     * the item exists and otherwise false
+     * Contains return true if the list has the item passed as an argument to
+     * the method So, iterate through the list and return true if the item
+     * exists and otherwise false
+     *
+     * @param      item  The item.
+     *
+     * @return     { return. }
      */
     public boolean contains(final int item) {
+
         // Replace the code below
         if (indexOf(item) >= 0) {
             return true;
@@ -207,11 +211,16 @@ public class List {
         return false;
     }
     /*
-     * Returns the index of the first occurrence
-     * of the specified element in this list,
-     * or -1 if this list does not contain the element.
+     * Returns the index of the first occurrence of the specified element in
+     * this list, or -1 if this list does not contain the element.
+     *
+     * @param      item  The item
+     *
+     * @return     { return item. }
      */
     public int indexOf(final int item) {
+
+
         // Replace the code below
         int index = -1;
         for (int i : list) {
@@ -220,7 +229,13 @@ public class List {
         }
         return -1;
     }
+    /**
+     * { functions. }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
+
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -256,7 +271,7 @@ public class List {
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
                 case "get":
-                if(l.get(Integer.parseInt(tokens[1]) ) != -1) {
+                if (l.get(Integer.parseInt(tokens[1])) != -1) {
                     System.out.println(l.get(Integer.parseInt(tokens[1])));
                 }
                 break;
