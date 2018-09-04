@@ -1,8 +1,12 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 
+/**
+ * List of class.
+ */
 public class List {
-	//Implement all the methods mentioned to build a ListADT
+
+    //Implement all the methods mentioned to build a ListADT
 
     /*
      * The goal for the list is to store items.
@@ -25,7 +29,6 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -87,7 +90,7 @@ public class List {
      * The method returns void (nothing)
      */
     public void add(int item) {
-    	list[size++] = item;
+        list[size++] = item;
     }
        
        
@@ -131,15 +134,15 @@ public class List {
     public void remove(int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-         if (index >=0 && index < size) {
-         	for (int i = index; i<size-1; i++) {
-         		list[i] = list[i+1];
-         	}
-         	list[size] = 0;
-         	size--;
+         if (index >= 0 && index < size) {
+            for (int i = index; i < size - 1; i++) {
+                list[i] = list[i + 1];
+            }
+            list[size] = 0;
+            size--;
          }
          else {
-         	System.out.println("Invalid Position Exception");
+            System.out.println("Invalid Position Exception");
          }
     }
 
@@ -156,8 +159,9 @@ public class List {
      */
     public int get(int index) {
         // Replace the code below to write the code for get
-        if (index >= 0 && index < size)
-        	return list[index];
+        if (index >= 0 && index < size) {
+            return list[index];
+        }
         return -1;
     }
 
@@ -185,14 +189,12 @@ public class List {
         // Replace the code below
         //return "print the list";
         String res = "[";
-        for (int i = 0; i<size-1; i++) {
-        	res = res + list[i]+ ",";
-
+        for (int i = 0; i < size - 1; i++) {
+            res = res + list[i] + ",";
         }
-        res = res + list[size-1] + "]";
+        res = res + list[size - 1] + "]";
         return res;
     } 
-    
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
@@ -201,11 +203,11 @@ public class List {
      */
     public boolean contains(int item) {
         // Replace the code below
-        if (indexOf(item)>= 0)
-        	return true;
+        if (indexOf(item) >= 0){
+            return true;
+        }
         return false;
     }
-
     /*
      * Returns the index of the first occurrence 
      * of the specified element in this list,
@@ -214,14 +216,13 @@ public class List {
     public int indexOf(int item) {
         // Replace the code below
         int index = -1;
-        for(int i : list){
-        	index++;
-        	if(i == item) return index;
+        for (int i : list) {
+            index++;
+            if (i == item) return index;
         }
         return -1;
     }
-
-	public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -257,7 +258,7 @@ public class List {
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
                 case "get":
-                if(l.get(Integer.parseInt(tokens[1]))!= -1)
+                if(l.get(Integer.parseInt(tokens[1]) )!= -1)
                     System.out.println(l.get(Integer.parseInt(tokens[1])));
                 break;
                 case "contains":
@@ -265,5 +266,5 @@ public class List {
                 break;
             }
         }
-	}
+    }
 }
