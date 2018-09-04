@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  * List of class.
- */
+ **/
 public class List {
 
     //Implement all the methods mentioned to build a ListADT
@@ -77,7 +77,7 @@ public class List {
         list = new int[ten];
         size = 0;
     }
-    /*
+    /**
      * The add method does what the name suggests.
      * Add an int item to the list.
      * The assumption is to store the item at the end of the list
@@ -86,7 +86,7 @@ public class List {
      * Think about how you can use the size variable to add item
      * to the list.
      * The method returns void (nothing)
-     */
+     **/
     public void add(final int item) {
         list[size++] = item;
     }
@@ -106,27 +106,23 @@ public class List {
         return size;
         //return -1;
     }
-    /*
-     * The remove method does what the name suggests.
-     * Removes an int item, specified by the index argument, from the list
-     * It also does an additional step.
-     * Think about what happens when
-     * an item is removed from the middle of the list
-     * It creates a hole in the list, right?
-     * This would mean, all the items that are
-     * to the right side of the removed item should be
-     * moved to the left by one position.
-     * Here is an example:
-     * array = [1,2,3,0,0,0,0,0,0,0]
-     * remove(2) would remove the item 2
-     * But how do you remove the item from an array?
-     * Well, the way to remove it is to move all
-     * the items, that are to the right of the removed item, to the left
-     * So, the new array looks like this.
-     * array = [1,3,0,0,0,0,0,0,0,0]
-     * The method returns void (nothing)
-     */
+    /**
+     * The remove method does what the name suggests. Removes an int item,
+     * specified by the index argument, from the list It also does an additional
+     * step. Think about what happens when an item is removed from the middle of
+     * the list It creates a hole in the list, right? This would mean, all the
+     * items that are to the right side of the removed item should be moved to
+     * the left by one position. Here is an example: array =
+     * [1,2,3,0,0,0,0,0,0,0] remove(2) would remove the item 2 But how do you
+     * remove the item from an array? Well, the way to remove it is to move all
+     * the items, that are to the right of the removed item, to the left So, the
+     * new array looks like this. array = [1,3,0,0,0,0,0,0,0,0] The method
+     * returns void (nothing)
+     *
+     * @param      index  value.
+     **/
     public void remove(final int index) {
+
         // write the logic for remove here.
         // Think about what to do to the size variable.
          if (index >= 0 && index < size) {
@@ -140,7 +136,7 @@ public class List {
             System.out.println("Invalid Position Exception");
         }
     }
-    /*
+    /**
      * Get method has to return the items that is at the index position passed
      * as an argument to the method. If the item doesn't exist then return a -1
      * to indicate that there is no element at that index. How can an element
@@ -152,7 +148,7 @@ public class List {
      * @param      index  .index.
      *
      * @return     { return negative value.}
-     */
+     **/
     public int get(final int index) {
         // Replace the code below to write the code for get
         if (index >= 0 && index < size) {
@@ -161,24 +157,20 @@ public class List {
         return -1;
     }
 
-    /*
-     * What happens when you print an object using println?
-     * Java provides a method named toString that is internally
-     * invoked when an object variable is used in println.
-     * For example:
-     * List l = new List();
-     * System.out.println(l);
-     * This statement is a shortcut for
-     * System.out.println(l.toString());
-     * So, implement the toString method to display the items
-     * in the list in the square brackets notation.
-     * i.e., if the list has numbers 1, 2, 3
-     * return the string [1,2,3]
-     * Caution: The array may be having other elements
-     * Example: [1,2,3,0,0,0,0,0,0,0]
-     * toString should only return the items in the list and
-     * not all the elements of the array.
-     */
+    /**
+     * What happens when you print an object using println? Java provides a
+     * method named toString that is internally invoked when an object variable
+     * is used in println. For example: List l = new List();
+     * System.out.println(l); This statement is a shortcut for
+     * System.out.println(l.toString()); So, implement the toString method to
+     * display the items in the list in the square brackets notation. i.e., if
+     * the list has numbers 1, 2, 3 return the string [1,2,3] Caution: The array
+     * may be having other elements Example: [1,2,3,0,0,0,0,0,0,0] toString
+     * should only return the items in the list and not all the elements of the
+     * array.
+     *
+     * @return     String representation of the object.
+     **/
     public String toString() {
         // Replace the code below
         //return "print the list";
@@ -189,15 +181,14 @@ public class List {
         res = res + list[size - 1] + "]";
         return res;
     } 
-    /*
-    / * Contains return true if the list has the item passed as an argument to
+    /** Contains return true if the list has the item passed as an argument to
      * the method So, iterate through the list and return true if the item
      * exists and otherwise false
      *
      * @param      item  The item.
      *
      * @return     { return. }
-     */
+     **/
     public boolean contains(final int item) {
 
         // Replace the code below
@@ -206,14 +197,14 @@ public class List {
         }
         return false;
     }
-    /*
+    /**
      * Returns the index of the first occurrence of the specified element in
      * this list, or -1 if this list does not contain the element.
      *
      * @param      item  The item
      *
      * @return     { return item. }
-     */
+     **/
     public int indexOf(final int item) {
 
 
@@ -221,7 +212,9 @@ public class List {
         int index = -1;
         for (int i : list) {
             index++;
-            if (i == item) return index;
+            if (i == item) {
+             return index;
+         }
         }
         return -1;
     }
@@ -229,12 +222,10 @@ public class List {
      * { functions. }
      *
      * @param      args  The arguments
-     */
+     **/
     public static void main(final String[] args) {
-
         // create an object of the list to invoke methods on it
         List l = new List();
-
         // code to read the test cases input file
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         // check if there is one more line to process
@@ -273,6 +264,8 @@ public class List {
                 break;
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
+                break;
+                default:
                 break;
             }
         }
