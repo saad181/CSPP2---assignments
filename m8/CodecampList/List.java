@@ -79,7 +79,7 @@ public class List {
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
         // That is the initial value to use for size.
-        int ten = 10;
+        final int ten = 10;
         list = new int[ten];
         size = 0;
     }
@@ -96,9 +96,9 @@ public class List {
         list[size++] = item;
     }
     /**
-     * { function_description }
+     * function_description.
      *
-     * @return     { description_of_the_return_value }
+     * @return     description_of_the_return_value.
      **/
     public int size() {
         // replace the code below to implement the size method
@@ -179,7 +179,7 @@ public class List {
         }
         res = res + list[size - 1] + "]";
         return res;
-    } 
+    }
     /** Contains return true if the list has the item passed as an argument to.
      * the method So, iterate through the list and return true if the item.
      * exists and otherwise false.
