@@ -29,11 +29,11 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    // declare a private int[]
+    // declare a private int[].
     // don't create the array yet using new
     // that's the job of the List constructor
     /**
-    declarng a int array
+    declarng a int array.
     **/
     private int[] list;
     /**
@@ -91,18 +91,15 @@ public class List {
      * void (nothing)
      *
      * @param      item  The item
-     **/
+     */
     public void add(final int item) {
         list[size++] = item;
     }
-    /** Inserts the specified element at the end of the list. /*
-    * The size method returns the value of the size.
-    * The purpose of the method is to announce the size of the list
-    * to the objects outside the list
-    * { list_item_description.}
-    /* The method returns an int. Empty list should return 0. */
-    // @return     { description_of_the_return_value }
-    //
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     **/
     public int size() {
         // replace the code below to implement the size method
         //int size = 0;
@@ -134,8 +131,7 @@ public class List {
             }
             list[size] = 0;
             size--;
-        }
-         else {
+        } else {
             System.out.println("Invalid Position Exception");
         }
     }
@@ -184,16 +180,13 @@ public class List {
         res = res + list[size - 1] + "]";
         return res;
     } 
-    /** Contains return true if the list has the item passed as an argument to
-     * the method So, iterate through the list and return true if the item
-     * exists and otherwise false
-     *
+    /** Contains return true if the list has the item passed as an argument to.
+     * the method So, iterate through the list and return true if the item.
+     * exists and otherwise false.
      * @param      item  The item.
-     *
-     * @return     { return. }
+     * @return     return.
      **/
     public boolean contains(final int item) {
-
         // Replace the code below
         if (indexOf(item) >= 0) {
             return true;
