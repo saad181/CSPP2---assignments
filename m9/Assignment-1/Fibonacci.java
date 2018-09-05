@@ -42,7 +42,12 @@ public class Fibonacci {
         }
        return fibonacci;
         }
-	public static void main(final String[] args) {
+	/**
+     * { ... }
+     *
+     * @param      args  The arguments.
+     */
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
