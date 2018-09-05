@@ -37,6 +37,8 @@ public class Fibonacci
 
        for (int i = 1; i<=n-2; i++) {
         int fib = fib1 + fib2;
+        fib1 = fib2;
+        fib2 = fib;
         fibonacci.add(fib);
         }
        return fibonacci;
