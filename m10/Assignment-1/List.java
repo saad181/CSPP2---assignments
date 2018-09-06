@@ -1,10 +1,8 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
-
 public class List {
 	//Implement all the methods mentioned to build a ListADT
-
     /*
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
@@ -26,12 +24,10 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
     private int[] list;
-
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -51,19 +47,14 @@ public class List {
      * to be accessed by the methods that are outside of the List class.
      * 
      */
-
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
     private int size;
-
     /*
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
-    
-    
-
     public List() {
 
         // what are the two variables to be initialized here?
@@ -79,7 +70,6 @@ public class List {
         // That is the initial value to use for size.
         size = 0;
     }
-
     /*
      * Overloaded constructor with list capacity as argument
      * The default constructor sets the list capacity to 10
@@ -94,11 +84,10 @@ public class List {
      * constructor.
      * 
      */
-    public List(int capacity) {
+    public List(final int capacity) {
         size = 0;
         list = new int[capacity];
     }
-    
     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
@@ -110,7 +99,7 @@ public class List {
      * 
      * The method returns void (nothing)
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the zelist.
         if (size < list.length) {
             list[size++] = item;
@@ -190,11 +179,11 @@ public class List {
      * The method returns void (nothing)
      */
 
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-        if(index >= 0 && index < size) {
-            for(int i = index; i < size - 1; i++) {
+        if (index >= 0 && index < size) {
+            for (int i = index; i < size - 1; i++) {
                 list[i] = list[i + 1];
             }
             size--;
@@ -260,25 +249,24 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         return indexOf(item) == -1;
     }
-
     /*
      * Returns the index of the first occurrence 
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
-    public int indexOf(int item) {
-        for(int i = 0; i < size; i++) {
-            if(item == list[i])
+    public int indexOf(final int item) {
+        for (int i = 0; i < size; i++) {
+            if (item == list[i])
                 return i;
         }
         return -1;
     }
    /*Inserts all the elements of specified int
     array to the end of list*/
-    public void addAll(int items[])
+    public void addAll(final int items[])
     {
         // write the logic
         for (int i : items) {
@@ -292,7 +280,7 @@ public class List {
 	by moving all the elements to the right
         The method returns void (nothing)
      */
-    public void add(int index,int item) {
+    public void add(final int index, final int item) {
          // write the logic
         if (index < 0) {
             System.out.println("Negative Index Exception");
@@ -353,7 +341,7 @@ public class List {
                 if(tokens.length == 2) {
                 String[] t1 = tokens[1].split(",");
                 int temp[] = new int[t1.length];
-                for(int i = 0; i < temp.length; i++) {
+                for (int i = 0; i < temp.length; i++) {
                     temp[i] = Integer.parseInt(t1[i]);
                 }
                 l.addAll(temp);
