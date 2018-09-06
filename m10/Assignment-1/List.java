@@ -281,8 +281,9 @@ public class List {
     public void addAll(int items[])
     {
         // write the logic
-        for (int i:items) {
-            list[size++] = i;
+        for (int i : items) {
+            //list[size++] = i;
+            add(i);
         }
     }
 
@@ -297,6 +298,12 @@ public class List {
             System.out.println("Negative Index Exception");
             return;
         }
+        for (int i =size; i> index; i--){
+            list[i] = list[i-1];
+
+        }
+        list[index] = item;
+        size++;
     }
     
     /* Returns the count of occurances of a given item in the list*/
