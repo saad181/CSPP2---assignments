@@ -1,5 +1,6 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class List {
 	//Implement all the methods mentioned to build a ListADT
@@ -111,7 +112,13 @@ public class List {
      */
     public void add(int item) {
         //Inserts the specified element at the end of the zelist.
-        list[size++] = item;   
+        if (size < list.length) {
+            list[size++] = item;
+        }
+        else {
+            resize();
+        }
+        
     }
 
     /*
@@ -146,6 +153,10 @@ public class List {
      */
 
     // todo create resize method
+    private int[] resize() {
+        list = Arrays.copyOf(list,2*size);
+        return list;
+    }
 
     /*
      * The size method returns the value of the size.
@@ -265,27 +276,40 @@ public class List {
         }
         return -1;
     }
-   /*Inserts all the elements of specified int 
+   /*Inserts all the elements of specified int
     array to the end of list*/
     public void addAll(int items[])
     {
-        // write the logic 
+        // write the logic
+        for (int i:items) {
+            list[size++] = i;
+        }
     }
 
      /* 
         Inserts the specified element at the specified index 
-	by moving all the elements to the right.
+	by moving all the elements to the right
         The method returns void (nothing)
      */
     public void add(int index,int item) {
-         // write the logic 
+         // write the logic
+        if (index < 0) {
+            System.out.println("Negative Index Exception");
+            return;
+        }
     }
     
     /* Returns the count of occurances of a given item in the list*/
     public int count(int item)
     {
-         // write the logic 
-        return 0;
+         // write the logic
+        int count = 0;
+        for (int i = 0; i < size; i++) {
+             if (list[i] == item) {
+                count++;
+             }
+        }
+        return count;
     }
 
 
