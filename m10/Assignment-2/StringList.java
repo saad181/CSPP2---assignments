@@ -80,13 +80,13 @@ public class StringList implements StringListInterface {
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        list = new String[10];
+        list= new String[10];
 
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
         // That is the initial value to use for size.
-        size = 0;
+        size= 0;
     }
 
     /*
@@ -105,7 +105,7 @@ public class StringList implements StringListInterface {
      */
 
     // todo - add an overloaded constructor here
-    public StringList(int capacity) {
+    public StringList(int capacity){
         size = 0;
         list = new String[capacity];
     }
@@ -133,7 +133,7 @@ public class StringList implements StringListInterface {
     /*Inserts all the elements of specified int
     array to the end of list*/
 
-    public void addAll(String[] items) {
+    public void addAll(String[] items){
         int i, j;
         for (i = size, j = 0; j < items.length; i++, j++) {
             if (size == list.length) {
