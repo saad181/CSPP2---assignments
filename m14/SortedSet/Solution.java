@@ -5,9 +5,17 @@ import java.util.Arrays;
  * Class for sortedset.
  */
 class Sortedset extends Set {
+    /**
+     * { function_description }.
+     *
+     * @param      fromElement  The from element
+     * @param      toElement    To element
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int[] subSet(final int fromElement, final int toElement) {
         /**
-         * { toelement, from element.}
+         * { toelement, from element.}.
          */
         if (fromElement > toElement) {
             System.out.println("Invalid Arguments to Subset Exception");
