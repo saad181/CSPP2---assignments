@@ -71,6 +71,11 @@ class Sortedset extends Set {
         }
         return set[size - 1];
     }
+    /**
+     * Adds all.
+     *
+     * @param      item  The item
+     */
     public void addAll(final int[] item) {
         /**
          * item.
@@ -109,7 +114,10 @@ class Sortedset extends Set {
         }
         sort(set);
     }
-}    
+}
+/**
+ * Class for solution.
+ */
 class Solution {
     /**
      * { function_description }.
