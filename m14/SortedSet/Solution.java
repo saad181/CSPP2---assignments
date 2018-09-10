@@ -1,8 +1,11 @@
 import java.util.Scanner;
 import java.io.BufferedInputStream;
 import java.util.Arrays;
-class Sortedset extends Set {    
-    public int[] subSet(int fromElement, int toElement) {
+/**
+ * Class for sortedset.
+ */
+class Sortedset extends Set {
+    public int[] subSet(final int fromElement, final int toElement) {
         if (fromElement > toElement) {
             System.out.println("Invalid Arguments to Subset Exception");
             return null;
@@ -21,7 +24,7 @@ class Sortedset extends Set {
         }
         return Arrays.copyOf(result, z);
     }
-    public int[] headSet(int toElement) {
+    public int[] headSet(final int toElement) {
         int[] result = new int[size];
         int count = 0;
         for (int i = 0; i < size; i++) {
@@ -39,7 +42,7 @@ class Sortedset extends Set {
         }
         return set[size - 1];
     }
-    public void addAll(int[] item) {
+    public void addAll(final int[] item) {
             for (int i:item) {
                 this.add(i);
         }
@@ -80,10 +83,10 @@ class Solution {
                .mapToInt(Integer::parseInt)
                .toArray();
     }
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Sortedset s = new Sortedset();
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
-         while (stdin.hasNext()){
+         while (stdin.hasNext()) {
             // read the line
             String line = stdin.nextLine();
             // split the line using space
