@@ -120,6 +120,10 @@ class Sortedset extends Set {
  */
 class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution(){}
+    /**
      * { function_description }.
      *
      * @param      s     { parameter_description }
