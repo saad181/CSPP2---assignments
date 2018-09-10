@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.io.BufferedInputStream;
 import java.util.Arrays;
-class Sortedset extends Set {
+class Sortedset extends Set {    
     public int[] subSet(int fromElement, int toElement) {
         if (fromElement > toElement) {
             System.out.println("Invalid Arguments to Subset Exception");
