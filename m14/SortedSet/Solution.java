@@ -6,6 +6,9 @@ import java.util.Arrays;
  */
 class Sortedset extends Set {
     public int[] subSet(final int fromElement, final int toElement) {
+        /**
+         * { toelement, from element.}
+         */
         if (fromElement > toElement) {
             System.out.println("Invalid Arguments to Subset Exception");
             return null;
@@ -25,6 +28,9 @@ class Sortedset extends Set {
         return Arrays.copyOf(result, z);
     }
     public int[] headSet(final int toElement) {
+        /**
+         * { to element.}
+         */
         int[] result = new int[size];
         int count = 0;
         for (int i = 0; i < size; i++) {
@@ -36,6 +42,9 @@ class Sortedset extends Set {
         return Arrays.copyOf(result, count);
     }
     public int last() {
+        /**
+         * { last function.}
+         */
         if (size == 0) {
             System.out.println("Set Empty Exception");
             return -1;
@@ -43,11 +52,17 @@ class Sortedset extends Set {
         return set[size - 1];
     }
     public void addAll(final int[] item) {
+        /**
+         * { item.}
+         */
             for (int i:item) {
                 this.add(i);
         }
     }
     public void sort(final int[] arr) {
+        /**
+         * { array.}
+         */
         int temp;
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
@@ -72,6 +87,9 @@ class Sortedset extends Set {
 }    
 class Solution {
     public static int[] intArray(final String s) {
+        /**
+         * { string s.}
+         */
         String input = s;
         if (input.equals("[]")) {
             return new int[0];
@@ -83,7 +101,10 @@ class Solution {
                .mapToInt(Integer::parseInt)
                .toArray();
     }
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
+        /**
+         * { string.}
+         */
         Sortedset s = new Sortedset();
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
          while (stdin.hasNext()) {
