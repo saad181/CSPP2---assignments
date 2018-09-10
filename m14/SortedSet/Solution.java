@@ -29,7 +29,7 @@ class Sortedset extends Set {
     }
     public int[] headSet(final int toElement) {
         /**
-         * { to element.}
+         * to element.
          */
         int[] result = new int[size];
         int count = 0;
@@ -43,7 +43,7 @@ class Sortedset extends Set {
     }
     public int last() {
         /**
-         * { last function.}
+         * last function.
          */
         if (size == 0) {
             System.out.println("Set Empty Exception");
@@ -53,7 +53,7 @@ class Sortedset extends Set {
     }
     public void addAll(final int[] item) {
         /**
-         * { item.}
+         * item.
          */
             for (int i:item) {
                 this.add(i);
@@ -61,7 +61,7 @@ class Sortedset extends Set {
     }
     public void sort(final int[] arr) {
         /**
-         * { array.}
+         * array.
          */
         int temp;
         for (int i = 0; i < size; i++) {
@@ -88,7 +88,7 @@ class Sortedset extends Set {
 class Solution {
     public static int[] intArray(final String s) {
         /**
-         * { string s.}
+         * string s.
          */
         String input = s;
         if (input.equals("[]")) {
@@ -103,7 +103,7 @@ class Solution {
     }
     public static void main(final String[] args) {
         /**
-         * { string.}
+         * string.
          */
         Sortedset s = new Sortedset();
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
