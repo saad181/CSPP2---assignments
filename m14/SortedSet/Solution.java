@@ -35,6 +35,13 @@ class Sortedset extends Set {
         }
         return Arrays.copyOf(result, z);
     }
+    /**
+     * { function_description }.
+     *
+     * @param      toElement  To element
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int[] headSet(final int toElement) {
         /**
          * to element.
@@ -49,6 +56,11 @@ class Sortedset extends Set {
         }
         return Arrays.copyOf(result, count);
     }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int last() {
         /**
          * last function.
@@ -67,6 +79,11 @@ class Sortedset extends Set {
                 this.add(i);
         }
     }
+    /**
+     * { function_description }.
+     *
+     * @param      arr   The arr
+     */
     public void sort(final int[] arr) {
         /**
          * array.
@@ -94,6 +111,13 @@ class Sortedset extends Set {
     }
 }    
 class Solution {
+    /**
+     * { function_description }.
+     *
+     * @param      s     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static int[] intArray(final String s) {
         /**
          * string s.
@@ -109,6 +133,11 @@ class Solution {
                .mapToInt(Integer::parseInt)
                .toArray();
     }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         /**
          * string.
