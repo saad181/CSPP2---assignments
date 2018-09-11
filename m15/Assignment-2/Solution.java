@@ -83,7 +83,7 @@ class Sortedset extends Set {
                 count++;
             }
         }
-        if(count != 0) {
+        if (count != 0) {
             return Arrays.copyOf(result, count);
         } else {
             throw new SetEmptyException("");
