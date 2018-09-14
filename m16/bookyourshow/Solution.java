@@ -47,13 +47,13 @@ public final class Solution {
                     Show show = bys.getAShow(check[1], tokens[1]);
                     if (show != null) {
                        System.out.println(show);
-                    } else {
+                    } else{
                         System.out.println("No show");
                     }
                 break;
 
                 case "print":
-                    bys.printTicket(check[1], tokens[1], tokens[2]);
+                    bys.printTicket(check[1],tokens[1],tokens[2]);
                 break;
 
                 case "showAll":
