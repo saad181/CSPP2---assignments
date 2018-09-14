@@ -2,9 +2,6 @@ import java.util.Scanner;
 /**
  * class solution.
  */final class Solution {
-/**
- * item.
- */
     /**
      * class.
      *
