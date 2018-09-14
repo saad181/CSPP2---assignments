@@ -11,7 +11,7 @@ class Solution {
 				String[] tokens = input[1].split(",");
 				shop.addToCatalog(new Item(tokens[0],tokens[1],tokens[2]));
 				break;
-				case "catalog1":
+				case "catalog":
 				shop.showCatalog();
 				break;
 				case "add":
