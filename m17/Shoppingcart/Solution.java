@@ -5,7 +5,7 @@ import java.util.Scanner;
     /**
      * class.
      *
-     * @param      args  The arguments
+     * @param      args  The arguments.
      */
     public static void main(final String[] args) {
         ShoppingCart shop = new ShoppingCart();
