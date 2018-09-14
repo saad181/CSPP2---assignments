@@ -3,6 +3,9 @@ import java.util.Scanner;
  * class solution.
  **/
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() { }
     /**
      * class.
