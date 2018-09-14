@@ -24,7 +24,7 @@ public final class Solution {
                 replace("[", "").replace("]", "").split(",");
             String[] check = tokens[0].split(" ");
             switch (check[0]) {
-                case "add1":
+                case "add":
                     int k = 2;
                     String[] seats = new String[tokens.length - 2];
                     for (int j=0; j < seats.length; j++) {
