@@ -44,6 +44,7 @@ import java.util.Scanner;
                 case "print":
                 shop.printInvoice();
                 break;
+                default:
             }
         }
 
