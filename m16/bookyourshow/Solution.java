@@ -33,7 +33,7 @@ public final class Solution {
                     bys.addAShow(new Show(check[1], tokens[1], seats));
                 break;
 
-                case "book1":
+                case "book":
                     k = 2 + 2;
                     seats = new String[tokens.length - 2 - 2];
                     for (int j = 0; j < seats.length; j++) {
