@@ -7,7 +7,7 @@ class Solution {
 		for(int i =0;i< lines;i++){
 			String[] input = sc.nextLine().split(" ");
 			switch(input[0]){
-				case "Item1":
+				case "Item":
 				String[] tokens = input[1].split(",");
 				shop.addToCatalog(new Item(tokens[0],tokens[1],tokens[2]));
 				break;
