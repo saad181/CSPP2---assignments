@@ -35,7 +35,7 @@ import java.util.Scanner;
                 System.out.println("totalAmount: " + shop.getTotalAmount());
                 break;
                 case "payableAmount":
-                System.out.println("Payable amount: " + shop.getPayableAmount());
+                System.out.println("Payable amount: " +shop.getPayableAmount());
                 break;
                 case "remove":
                 String[] tokens12 = input[1].split(",");
