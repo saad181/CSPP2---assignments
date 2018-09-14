@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * class solution.
+ */
 class Solution {
     /**
      * class.
