@@ -43,7 +43,7 @@ public final class Solution {
                         new Patron(tokens[2], tokens[2 + 1]), seats);
                 break;
 
-                case "get1":
+                case "get":
                     Show show = bys.getAShow(check[1], tokens[1]);
                     if (show != null) {
                        System.out.println(show);
