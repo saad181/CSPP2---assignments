@@ -278,11 +278,11 @@ public final class Solution {
             String string = scan.nextLine();
             String[] words = string.split(":");
             // System.out.println(words.length);
-            if (words.length < var_five || (words[1].length() == 0)) {
+            if (words.length < var_five || (words[0].length() == 0)) {
                 System.out.println("Error! Malformed question");
                 return;
             } else {
-            if (words[0].split(",").length < var_two) {
+            if (words[1].split(",").length < var_two) {
                 System.out.println(words[0] + " "
                     + "does not have enough answer choices");
                 return;
