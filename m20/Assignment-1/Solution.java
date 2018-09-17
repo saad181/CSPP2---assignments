@@ -57,7 +57,7 @@ class Question {
      * @return     { description_of_the_return_value }
      */
     public boolean evaluateResponse(final String choice) {
-        if (choice.equals(choices[correctAnswer-1])) {
+        if (choice.equals(choices[correctAnswer - 1])) {
             return true;
         }
         return false;
@@ -125,7 +125,7 @@ class Question {
      */
     public String toString() {
         String str = "";
-        for(int i =0; i < choices.length-1; i++) {
+        for (int i =0; i < choices.length-1; i++) {
             str = str+ choices[i] + "\t";
         }
         return str + choices[choices.length - 1];
