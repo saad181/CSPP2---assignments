@@ -282,7 +282,7 @@ public final class Solution {
                 System.out.println("Error! Malformed question");
                 return;
             } else {
-            if (words[1].split(",").length < var_two) {
+            if (words[0].split(",").length < var_two) {
                 System.out.println(words[0] + " "
                     + "does not have enough answer choices");
                 return;
