@@ -301,8 +301,8 @@ public final class Solution {
         }
         String[] choices = words[1].split(",");
         Question quiz1 = new Question(words[0], choices,
-            Integer.parseInt(words[vartwo]),
-            Integer.parseInt(words[varthree]), Integer.parseInt(words[varfour]));
+        Integer.parseInt(words[vartwo]),
+        Integer.parseInt(words[varthree]), Integer.parseInt(words[varfour]));
         quiz.addQuestion(quiz1);
         }
         System.out.println(q + " are added to the quiz");
