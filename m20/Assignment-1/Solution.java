@@ -125,8 +125,8 @@ class Question {
      */
     public String toString() {
         String str = "";
-        for (int i =0; i < choices.length-1; i++) {
-            str = str+ choices[i] + "\t";
+        for (int i = 0; i < choices.length - 1; i++) {
+            str = str + choices[i] + "\t";
         }
         return str + choices[choices.length - 1];
     }
@@ -265,10 +265,10 @@ public final class Solution {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
-       final int var_five = 5;
-        final int var_two = 2;
-        final int var_three = 3;
-        final int var_four = 4;
+       final int varfive = 5;
+        final int vartwo = 2;
+        final int varthree = 3;
+        final int varfour = 4;
         int i;
         if (q == 0) {
             System.out.println("Quiz does not have questions");
@@ -278,31 +278,31 @@ public final class Solution {
             String string = scan.nextLine();
             String[] words = string.split(":");
             // System.out.println(words.length);
-            if (words.length < var_five || (words[0].length() == 0)) {
+            if (words.length < varfive || (words[0].length() == 0)) {
                 System.out.println("Error! Malformed question");
                 return;
             } else {
-            if (words[1].split(",").length < var_two) {
+            if (words[1].split(",").length < vartwo) {
                 System.out.println(words[0] + " "
                     + "does not have enough answer choices");
                 return;
-            } else if (Integer.parseInt(words[var_two]) > var_four) {
+            } else if (Integer.parseInt(words[vartwo]) > varfour) {
                 System.out.println(
                     "Error! Correct answer choice number is out of" + " "
                     + "range for question text 1");
                 return;
-            } else if (Integer.parseInt(words[var_three]) <= 0) {
+            } else if (Integer.parseInt(words[varthree]) <= 0) {
                 System.out.println("Invalid max marks for" + " " + words[0]);
                 return;
-            } else if (Integer.parseInt(words[var_four]) > 0) {
+            } else if (Integer.parseInt(words[varfour]) > 0) {
                 System.out.println("Invalid penalty for" + " " + words[0]);
                 return;
             }
         }
         String[] choices = words[1].split(",");
         Question quiz1 = new Question(words[0], choices,
-            Integer.parseInt(words[var_two]),
-            Integer.parseInt(words[var_three]), Integer.parseInt(words[var_four]));
+            Integer.parseInt(words[vartwo]),
+            Integer.parseInt(words[varthree]), Integer.parseInt(words[varfour]));
         quiz.addQuestion(quiz1);
         }
         System.out.println(q + " are added to the quiz");
