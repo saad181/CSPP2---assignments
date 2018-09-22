@@ -34,7 +34,7 @@ class Solution {
                     }
                 }
             }
-            int hundred = 100;
+            final int hundred = 100;
             System.out.println(lcs + "\tand its length is\t" + lcs.length());
             int numerator = lcs.length() * 2 * hundred;
             System.out.println(numerator);
