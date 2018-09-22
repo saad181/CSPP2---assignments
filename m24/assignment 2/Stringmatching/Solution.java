@@ -29,7 +29,7 @@ class Solution {
                 for (int j = i + 1; j <= s2.length(); j++) {
                     if (s1.contains(s2.substring(i, j))) {
                         if (s2.substring(i, j).length() > lcs.length()) {
-                            lcs = s2.substring(i, j).replaceAll(" ","");
+                            lcs = s2.substring(i, j).replaceAll(" ", "");
                         }
                     }
                 }
