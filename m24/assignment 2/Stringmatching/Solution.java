@@ -3,7 +3,11 @@ import java.io.File;
 /**
  * Class for solution.
  */
-public class Solution {
+ class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() { }
     /**
      * args.
      *
