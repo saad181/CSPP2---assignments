@@ -3,7 +3,7 @@ import java.io.*;
 /**
  * Class for solution.
  */
-class Solution {
+public class Solution {
     /**
      * args.
      *
