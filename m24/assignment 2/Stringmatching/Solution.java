@@ -42,7 +42,7 @@ class Solution {
             System.out.println(denominator);
             System.out.println((numerator / denominator));
         } catch (Exception e) {
-            System.out.println("FILE NOT FOUND");
+            System.out.println("Empty Directory");
         }
     }
 }
