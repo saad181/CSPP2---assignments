@@ -1,52 +1,152 @@
-import java.util.Scanner;
-import java.io.File;
-/**
- * Class for solution.
- */
- class Solution {
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+// import java.util.Map;
+// import java.util.HashMap;
+// import java.lang.*;
+// import java.io.File;
+/**this class is to maintain.
+*complete details of two files.
+*/
+class Data {
+    /** this is an empty constructor.
+    */
+    Data() {
+    }
+    /**this method is to convert the.
+    *file document text to string
+    *@param file File
+    *@return str returns string of that text.
+    */
+    public static String toText(final File file) {
+        String str = "";
+        try {
+            Scanner input = new Scanner(new FileReader(file));
+            StringBuilder text = new StringBuilder();
+            while (input.hasNext()) {
+                text.append(input.next());
+                text.append(" ");
+            }
+            input.close();
+            str = text.toString();
+        } catch (FileNotFoundException e) {
+            System.out.println("No file");
+        }
+        return str;
+    }
     /**
-     * Constructs the object.
+     * to remove the unwanted characters.
+     *
+     * @param      text  The text
+     *
+     * @return map which contains
+     * frequency of words.
      */
-    private Solution() { }
+    public Map remove(final String text) {
+        text.toLowerCase();
+        text.replaceAll("[0-9_]", "");
+        String[] words = text.split(" ");
+        Map<String, Integer> map = new HashMap<>();
+        for (String element : words) {
+         if (element.length() > 0) {
+            if (!(map.containsKey(element))) {
+                map.put(element, 1);
+            } else {
+                map.put(element, map.get(element) + 1);
+            }
+        }
+    }
+        return map;
+    }
+    /**this method is to give the.
+     *document distance.
+     *@param textOne first file string
+     *@param textTwo second file string
+     *@return document distance
+     */
+
+    public double stringMatching(final String textOne, final String textTwo) {
+        int lengthOne = textOne.length();
+        int lengthTwo = textTwo.length();
+        double totalLength = lengthOne + lengthTwo;
+        int max = 0;
+        double lcs = 0;
+        int hundred = 100;
+        int[][] array = new int[lengthOne][lengthTwo];
+        for (int i = 0; i < lengthOne; i++) {
+            for (int j = 0; j < lengthTwo; j++) {
+                if (textOne.charAt(i) == textTwo.charAt(j)) {
+                    if (i == 0 || j == 0) {
+                        array[i][j] = 1;
+                    } else {
+                        array[i][j] = array[i - 1][j - 1] + 1;
+                    } if (max < array[i][j]) {
+                        max = array[i][j];
+                    }
+                }
+            }
+        }
+        lcs = (((max * 2) / totalLength) * hundred);
+        return lcs;
+    }
+}
+/** this is the solution class.
+*/
+public final class Solution {
+    /** an empty constructor.
+    */
+    private Solution() {
+
+    }
     /**
-     * args.
+     * this is main method.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        try {
-            File test1 = new File("File1.txt");
-            Scanner s = new Scanner(test1);
-            String s1 = "";
-            while (s.hasNext()) {
-                s1 += s.nextLine();
-
-            }
-            File test2 = new File("File2.txt");
-            s = new Scanner(test2);
-            String s2 = "";
-            while (s.hasNext()) {
-                s2 += s.nextLine();
-            }
-            String lcs = "";
-            for (int i = 0; i < s2.length(); i++) {
-                for (int j = i + 1; j <= s2.length(); j++) {
-                    if (s1.contains(s2.substring(i, j))) {
-                        if (s2.substring(i, j).length() > lcs.length()) {
-                            lcs = s2.substring(i, j).replaceAll(" ", "");
-                        }
+        try  {
+        Scanner scan = new Scanner(System.in);
+        String input = scan.nextLine();
+        File files = new File(input);
+        Data obj = new Data();
+        File[] fileList = files.listFiles();
+        int length = fileList.length;
+        double maxValue = 0;
+        final int hundred = 100;
+        String result = "";
+        double[][] fileMatrix = new double[length][length];
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < length; j++) {
+                if (i == j) {
+                    fileMatrix[i][j] = hundred;
+                } else {
+                    fileMatrix[i][j] = obj.stringMatching(
+                        obj.toText(fileList[i]), obj.toText(fileList[j]));
+                    if (maxValue < fileMatrix[i][j]) {
+                        maxValue = fileMatrix[i][j];
+                        result = "Maximum similarity is between "
+                        + fileList[i].getName() + " and "
+                        + fileList[j].getName();
                     }
                 }
             }
-            final int hundred = 100;
-            System.out.println(lcs + "\tand its length is\t" + lcs.length());
-            int numerator = lcs.length() * 2 * hundred;
-            System.out.println(numerator);
-            int denominator = s1.length() + s2.length();
-            System.out.println(denominator);
-            System.out.println((numerator / denominator));
-        } catch (Exception e) {
-            System.out.println("Empty Directory");
         }
+        System.out.print("      \t");
+        for (int i = 0; i < length - 1; i++) {
+            System.out.print("\t" + fileList[i].getName());
+        }
+        System.out.println("\t" + fileList[length - 1].getName());
+        for (int i = 0; i < length; i++) {
+            System.out.print(fileList[i].getName() + "\t");
+            for (int j = 0; j < length; j++) {
+                    System.out.print(String.format("%.1f",fileMatrix[i][j]) + "\t\t");
+            }
+            System.out.println();
+        }
+     System.out.println(result);
+    } catch (NoSuchElementException e) {
+        System.out.println("Empty Directory");
+    }
     }
 }
+
