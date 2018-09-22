@@ -1,6 +1,14 @@
 import java.util.*;
 import java.io.*;
+/**
+ * Class for solution.
+ */
 class Solution {
+    /**
+     * args.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         try {
             File test1 = new File("File1.txt");
@@ -26,8 +34,9 @@ class Solution {
                     }
                 }
             }
+            int hundred = 100;
             System.out.println(lcs + "\tand its length is\t" + lcs.length());
-            int numerator = lcs.length() * 2 * 100;
+            int numerator = lcs.length() * 2 * hundred;
             System.out.println(numerator);
             int denominator = s1.length() + s2.length();
             System.out.println(denominator);
@@ -37,4 +46,3 @@ class Solution {
         }
     }
 }
-    
