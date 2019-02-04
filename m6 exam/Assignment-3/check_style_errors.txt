@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\MSIT\CSPP2---assignments\m6 exam\Assignment-3\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 Audit done.
-Checkstyle ends with 1 errors.

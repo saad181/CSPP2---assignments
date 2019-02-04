@@ -47,6 +47,6 @@ final class Solution {
         char oldChar = scan.next().charAt(0);
         char newChar = scan.next().charAt(0);
         char[] newCharArray = replaceAll(charArray, oldChar, newChar);
-        System.out.println(newCharArray);
+        System.out.println(Arrays.toString(newCharArray));
     }
 }
